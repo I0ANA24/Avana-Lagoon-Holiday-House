@@ -8,6 +8,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     position: relative;
+    background-color: #D0FFFF;
 }
 
 img {
@@ -108,7 +109,7 @@ header {
     color: white;
     font-family: 'Roboto Serif', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.4em;
     background-color: black;
     border-radius: 50px;
     padding: 15px 25px;
@@ -118,3 +119,42 @@ header {
     background-color: transparent;
     border: 4px solid white;
 }
+
+.section1, .section2 {
+    width: 100%;
+    margin-top: 15vh;
+    padding: 0 10vw;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 10vh 0;
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about-us-content {
+    width: 100%;
+    font-family: 'Azeret Mono', sans-serif;
+    color: black;
+    font-size: 1em;
+}
+
+.about-us-content img {
+    float: left;
+    height: 40vh;
+    width: auto;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.about-us-text {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-indent: 60px;
+    text-align: auto;
+}
+
