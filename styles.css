@@ -11,7 +11,7 @@ body {
     background-color: #D0FFFF;
 }
 
-.mobile-menu .even {
+.mobile-menu, .even {
     display: none;
 }
 
@@ -485,7 +485,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2vh;
+        gap: 3vh;
     }
     
     .about-us-content img {
@@ -514,7 +514,7 @@ footer {
         gap: 1.5vh;
     }
     
-     .lines {
+    .lines {
         display: none;
     }
     
@@ -522,6 +522,10 @@ footer {
         width: 90vw;
         border-radius: 10px;
         height: 55vw;
+    }
+
+    .even {
+        display: block;
     }
 
     .photos-details {
