@@ -11,9 +11,8 @@ body {
     background-color: #D0FFFF;
 }
 
-img {
-    width: 30vw;
-    height: auto;
+.mobile-menu {
+    display: none;
 }
 
 header {
@@ -382,5 +381,189 @@ footer {
     
     .footer-up-text p {
         font-size: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 8vh;
+        padding: 0 5vw;
+    }
+    
+    #logo {
+        height: 7vh;
+        width: 9vh;
+        left: calc(95vw - 9vh);
+        top: 1vh;
+    }
+    
+    .header a {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #menu-icon {
+        height: 4.5vh;
+        margin: 1.75vh 5vw;
+        display: block;
+    }
+
+    #menu-icon-close {
+        height: 5vh;
+        margin: 1.5vh 5vw;
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        max-width: 250px;
+        background-color: #5582a5;
+        height: 100vh;
+        position: fixed;
+        top: 8vh;
+        padding: 10vh 10vw;
+        align-items: baseline;
+        gap: 5vh;
+        display: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+        font-family: 'Roboto Serif';
+        font-weight: 600;
+
+    }
+
+    .hero {
+        padding: 0 5vw;
+        gap: 0;
+    }
+    
+    .hero-title {
+        font-size: 4vw;
+    }
+    
+    #hero-text {
+        font-size: 3vw;
+        max-width: 80vw;
+        font-weight: 500;
+        margin-top: 2vh;
+    }
+    
+    .contact-us a {
+        font-weight: 600;
+        font-size: 1em;
+        padding: 2vw 3.5vw;
+    }
+    
+    .section1, .section2 {
+        margin-top: 10vh;
+        padding: 0 5vw;
+    }
+    
+    .section1 {
+        min-height: 0;
+    }
+    
+    h2 {
+        margin: 5vh 0;
+    }
+    
+    .about-us-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    .about-us-content img {
+        float: none;
+        width: 90vw;
+        height: auto;        
+        margin: 0;
+    }
+    
+    .about-us-text {
+        line-height: 1.3em;
+        text-indent: 50px;
+        text-align: justify;
+        height: min-content;
+        width: 90vw;
+    }
+    
+    .about-us-text p {
+        width: 100%;
+    }
+    
+    .images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    
+     .lines {
+        display: none;
+    }
+    
+    .general-image {
+        width: 90vw;
+        border-radius: 10px;
+        height: 55vw;
+    }
+
+    .photos-details {
+        margin-top: 3vh;
+    }
+    
+    #photos-text {
+        font-size: 0.9em;
+        line-height: 1.3em;
+        width: 80vw;
+    }
+    
+    .bottom-button a {
+        font-size: 1em;
+    }
+    
+    footer {
+        height: 38vh;
+    }
+    
+    .footer-up {
+        height: 30vh;
+        padding: 0 5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    .footer-up-title {
+        font-size: 5vh;
+    }
+    
+    .footer-up-text p {
+        font-size: 2vh;
+    }
+    
+    .header.footer #logo {
+        height: 90%;
+        width: 8vh;
+        top: 5%;
+        left: 50%;
+        translate: -50% 0;
     }
 }
