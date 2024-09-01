@@ -11,7 +11,7 @@ body {
     background-color: #D0FFFF;
 }
 
-.mobile-menu {
+.mobile-menu .even {
     display: none;
 }
 
