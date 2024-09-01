@@ -27,31 +27,3 @@ close.addEventListener('click', () => {
     menu.style.display = "none";
     document.body.style.overflow = "scroll";
 });
-
-let startX = 0;
-let endX = 0;
-
-document.addEventListener('touchstart', function(e) {
-    startX = e.touches[0].clientX;
-});
-
-document.addEventListener('touchmove', function(e) {
-    endX = e.touches[0].clientX;
-});
-
-document.addEventListener('touchend', function(e) {
-    let deltaX = endX - startX;
-
-    if (deltaX > 100) { // swipe right
-        hamburger.style.display = "none";
-        close.style.display = "block";
-        menu.style.display = "flex";
-        document.body.style.overflow = "hidden";
-    } else if (deltaX < -100) { // swipe left
-        close.style.display = "none";
-        hamburger.style.display = "block";
-        menu.style.display = "none";
-        document.body.style.overflow = "scroll";
-
-    }
-});
