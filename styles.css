@@ -31,7 +31,7 @@ header {
     justify-content: end;
     align-items: center;
     gap: 5vw;
-    padding: 0 10vw;
+    padding: 0 15vw;
     position: sticky;
     top: 0;
     left: 0;
@@ -44,7 +44,7 @@ header {
     height: 10vh;
     position: absolute;
     top: 0;
-    left: 10vw;
+    left: 15vw;
 }
 
 .header a {
@@ -64,7 +64,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10vw;
+    padding: 0 15vw;
     gap: 2vh;
     width: 100%;
     height: 80vh;
@@ -122,7 +122,7 @@ header {
 
 .section1, .section2 {
     width: 100%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     padding: 0 15vw;
 }
 
@@ -198,7 +198,7 @@ h2 {
 
 .photos-details {
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,13 +207,12 @@ h2 {
 }
 
 #photos-text {
-    font-size: 1.4em;
+    font-size: 1em;
     text-align: center;
-    font-family: 'Azeret', sans-serif;
+    font-family: 'Azeret Mono', sans-serif;
     line-height: 1.5em;
     width: 60vw;
     color: black;
-    font-weight: 500;
 }
 
 .bottom-button a {
@@ -231,4 +230,157 @@ h2 {
     background-color: transparent;
     border: 3.5px solid black;
     color: black;
+}
+
+footer {
+    margin-top: 10vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-up {
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/footer-image.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 0 15vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-up-title {
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    font-weight: 100;
+    font-size: 4vw;
+    width: max-content;
+}
+
+#footer-up-title1 {
+    padding-left: 5vw;
+    width: max-content;
+}
+
+.footer-up-text p {
+    font-family: 'Azeret Mono', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    width: max-content;
+}
+
+.footer-up-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.header.footer {
+    background-color: #286DA1;
+}
+
+.header.footer a {
+    color: white;
+}
+
+.header.footer a:hover {
+    border-bottom: 2px solid white;
+}
+
+.header.footer #logo {
+    height: 90%;
+    width: 10vh;
+    top: 5%;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        padding: 0 10vw;
+    }
+    
+    #logo {
+        width: 10vh;
+        height: 8vh;
+        top: 1.2vh;
+        left: 10vw;
+    }
+    
+    .hero-title {
+        font-size: 1.5em;
+    }
+    
+    #hero-text {
+        font-size: 1.3em;
+        max-width: 80vw;
+        margin-bottom: 3vh;
+        font-weight: 500;
+    }
+    
+    .section1, .section2 {
+        margin-top: 10vh;
+        padding: 0 10vw;
+    }
+
+    h2 {
+        margin: 5vh 0;
+    }
+    
+    .about-us-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+    }
+    
+    .about-us-content img {
+        float: none;
+        margin: 0;
+    }
+    
+    .about-us-text {
+        text-indent: 70px;
+        text-align: justify;
+        height: auto;
+        width: 80vw;
+    }
+    
+    .lines {
+        height: 18vw;
+    }
+    
+    .lines img {
+        width: calc(73vw / 3);
+    }
+    
+    .photos-details {
+        margin-top: 3vh;
+        gap: 3vh;
+    }
+    
+    #photos-text {
+        font-size: 1em;
+        line-height: 1.2em;
+        width: 75vw;
+    }
+    
+    .bottom-button a {
+        font-size: 1.1em;
+    }
+    
+    .footer-up {
+        padding: 0 10vw;
+    }
+    
+    .footer-up-title {
+        font-size: 5vw;
+    }
+    
+    .footer-up-text p {
+        font-size: 2vw;
+    }
 }
