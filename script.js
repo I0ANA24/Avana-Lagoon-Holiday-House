@@ -14,7 +14,7 @@ hamburger.addEventListener('click', () => {
             menu.style.display = "none";
             document.body.style.overflow = "scroll";
 
-            if(event.target.tagName === 'A') {
+            if(event.target.tagName === 'A' || event.target.tagName === 'IMG') {
                 event.preventDefault();
             }
         }
@@ -42,12 +42,12 @@ document.addEventListener('touchmove', function(e) {
 document.addEventListener('touchend', function(e) {
     let deltaX = endX - startX;
 
-    if (deltaX > 100) { // swipe dreapta
+    if (deltaX > 100) { // swipe right
         hamburger.style.display = "none";
         close.style.display = "block";
         menu.style.display = "flex";
         document.body.style.overflow = "hidden";
-    } else if (deltaX < -100) { // swipe stânga
+    } else if (deltaX < -100) { // swipe left
         close.style.display = "none";
         hamburger.style.display = "block";
         menu.style.display = "none";

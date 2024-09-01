@@ -567,3 +567,13 @@ footer {
         translate: -50% 0;
     }
 }
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 5vw;
+    }
+
+    #hero-text {
+        font-size: 4vw;
+    }
+}
