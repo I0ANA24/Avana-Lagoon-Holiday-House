@@ -171,6 +171,10 @@ h2 {
     width: 100%;
 }
 
+#first-p {
+    margin-bottom: 4vh;
+}
+
 .images {
     width: 100%;
     display: flex;
