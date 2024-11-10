@@ -1,1 +1,2 @@
 # Avana-Lagoon-Holiday-House
+  I created a custom website for a client, using web technologies such as HTML, CSS and JavaScript to develop the functionality and design of the site. The visual design was done by me using Figma, creating a modern and easy to use interface. After the project was completed, I uploaded and launched the website to the internet via hosting services provided by GoDaddy, ensuring that the website is fully functional, responsive and accessible to the public.
